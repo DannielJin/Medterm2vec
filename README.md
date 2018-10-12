@@ -26,16 +26,17 @@ pip3 uninstall ./dist/*.whl -y
 
 ## Usage example
 
-Guidelines:  
+* SAMPLE_CODES in the EXAMPLE folder    
+
+* Guidelines:  
 (1) In your project folder, (e.g.) /PRJ/  
 (2) Make folders;   
     - CONFIG  
     - DATA  
     - RESULT    
 (3) Run the codes in your project folder. 
-
-* SAMPLE_CODES in the EXAMPLE folder
-
+  
+  
 Make EMB_PARAMS.txt in CONFIG FOLDER:
 ```
 ## (e.g.)
