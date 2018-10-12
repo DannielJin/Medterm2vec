@@ -38,6 +38,8 @@ def Train_model(logger, dataSets, model, logPath, new_game=True):
                                                   feed_dict=feed_dict)
                 tr_summary = sess.run(summary_op, feed_dict=feed_dict)
                 tr_writer.add_summary(tr_summary, g_step)
+                tr_writer.flush()
+                
                 if logger is not None:
                     logger.info('[G-{}]  LOSS ({:.4f}) LR_p1 ({:6f})'.format(g_step, loss_p1, lr_p1))
                 else:
@@ -64,6 +66,8 @@ def Train_model(logger, dataSets, model, logPath, new_game=True):
                                                            feed_dict=feed_dict)
                 tr_summary = sess.run(summary_op, feed_dict=feed_dict)
                 tr_writer.add_summary(tr_summary, g_step)
+                tr_writer.flush()
+                
                 if logger is not None:
                     logger.info('[G-{}]  LOSS ({:.4f} / {:.4f}) LR_p2 ({:6f})'.format(g_step, loss_p1, loss_p2, lr_p2))
                 else:
