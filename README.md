@@ -26,7 +26,7 @@ pip3 uninstall ./dist/*.whl -y
 
 ## Usage example
 
-Guidelines:
+Guidelines:  
 (1) In your project folder, (e.g.) /PRJ/  
 (2) Make folders;   
     - CONFIG  
